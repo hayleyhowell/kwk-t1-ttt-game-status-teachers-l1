@@ -14,7 +14,14 @@ def won?(board)
   return false
 end
 
-
+def full?(board)
+  board.each do |spot|
+    if spot == " "
+      return false 
+    end
+  end
+  return true 
+end
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
