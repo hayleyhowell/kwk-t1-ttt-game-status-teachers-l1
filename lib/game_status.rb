@@ -9,10 +9,9 @@ def won?(board)
       return combo 
     elsif board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O" 
       return combo  
-    else 
-      return false 
     end
   end 
+  return false
 end
 
 # Define your WIN_COMBINATIONS constant
