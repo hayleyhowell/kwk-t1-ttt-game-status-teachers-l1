@@ -39,7 +39,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   winning_combo = won?(board)
   if winning_combo != nil
     return board[winning_combo[0]]
