@@ -6,11 +6,11 @@ end
 def won?(board)
   board.each do |combo|
     if combo[0] == "X" && combo[1] == "X" && combo[2] == "X" 
-      true 
+      return true 
     elsif combo[0] == "O" && combo[1] == "O" && combo[2] == "O" 
-      true  
+      return true  
     else 
-      false 
+      return false 
     end
   end 
 end
